@@ -201,7 +201,7 @@ function App() {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg font-semibold mb-2">د. عائشة القرني</p>
-          <p className="text-gray-300 mb-4">استشارات أكاديمية متخصصة في علوم الحياة</p>
+          <p className="text-gray-300 mb-4">استشارات أكاديمية متخصصة </p>
           <div className="flex justify-center items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />

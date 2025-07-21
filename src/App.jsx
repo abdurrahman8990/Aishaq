@@ -141,7 +141,7 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">الخدمات المقدمة</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {services.map((service) => (
-              <Card key={service.id} className="hover:shadow-lg transition-shadow duration-300 border-purple-100">
+              <Card key={service.id} className="bg-white border border-gray-200 shadow-sm rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-800 leading-relaxed">{service.title}</CardTitle>
                   <CardDescription className="text-gray-600">{service.description}</CardDescription>
@@ -224,4 +224,3 @@ function App() {
 }
 
 export default App
-

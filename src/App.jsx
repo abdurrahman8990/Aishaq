@@ -1,7 +1,7 @@
 import { Button } from './components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from './components/ui/badge.jsx'
-import { Phone, Mail, MessageCircle, GraduationCap, Award, BookOpen } from 'lucide-react'
+import { Phone, Mail, MessageCircle, Dna, Award, BookOpen } from 'lucide-react'
 import '../App.css'
 
 function App() {
@@ -81,25 +81,23 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
       {/* Header */}
       <header className="bg-gradient-to-r from-purple-100 to-gray-100 py-12">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center items-center mb-4">
-            <GraduationCap className="w-12 h-12 text-purple-600 ml-4" />
-            <div>
-              <h1 className="text-4xl font-bold text-gray-800 mb-2">د. عائشة القرني</h1>
-              <p className="text-xl text-purple-600 font-semibold">دكتوراه بيولوجيا الخلية والوراثة والأنسجة</p>
-            </div>
+          <div className="flex flex-col items-center mb-4">
+            <Dna className="w-14 h-14 text-purple-600 mb-4" />
+            <h1 className="text-4xl font-bold text-gray-800 mb-2">د. عائشة القرني</h1>
+            <p className="text-xl text-purple-600 font-semibold">دكتوراه بيولوجيا الخلية والوراثة والأنسجة</p>
           </div>
-          <div className="flex justify-center items-center gap-6 mt-6">
-            <div className="flex items-center gap-2 text-gray-600">
+          <div className="flex flex-wrap justify-center items-center gap-4 mt-6 text-sm sm:text-base text-gray-600">
+            <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span dir="ltr">+966 555 020 733</span>
+              <span dir="ltr" className="whitespace-nowrap">+966 555 020 733</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              <span>alqarni-aisha@hotmail.com</span>
+              <span className="whitespace-nowrap">alqarni-aisha@hotmail.com</span>
             </div>
           </div>
         </div>
@@ -122,7 +120,7 @@ function App() {
                 <p className="text-gray-600">بيولوجيا الخلية والوراثة والأنسجة</p>
               </div>
               <div className="text-center">
-                <GraduationCap className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                <Dna className="w-12 h-12 text-purple-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">التعليم</h3>
                 <p className="text-gray-600">دكتوراه من جامعة الملك سعود بتقدير ممتاز مع مرتبة الشرف الأولى</p>
               </div>
@@ -141,7 +139,7 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">الخدمات المقدمة</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {services.map((service) => (
-              <Card key={service.id} className="bg-white border border-gray-200 shadow-sm rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+              <Card key={service.id} className="bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-800 leading-relaxed">{service.title}</CardTitle>
                   <CardDescription className="text-gray-600">{service.description}</CardDescription>
@@ -201,8 +199,8 @@ function App() {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg font-semibold mb-2">د. عائشة القرني</p>
-          <p className="text-gray-300 mb-4">استشارات أكاديمية متخصصة </p>
-          <div className="flex justify-center items-center gap-6">
+          <p className="text-gray-300 mb-4">استشارات أكاديمية متخصصة</p>
+          <div className="flex justify-center items-center gap-6 flex-wrap text-sm">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
               <span dir="ltr">+966 555 020 733</span>

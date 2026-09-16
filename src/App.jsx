@@ -151,10 +151,10 @@ function App() {
                     </Badge>
                   </div>
                   <Button 
-                    className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                    className="w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white"
                     onClick={() => window.open(generateWhatsAppLink(service.title), '_blank')}
                   >
-                    <MessageCircle className="w-4 h-4 ml-2" />
+                    <MessageCircle className="w-4 h-4 shrink-0" />
                     طلب الخدمة
                   </Button>
                 </CardContent>

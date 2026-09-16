@@ -175,19 +175,19 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-green-600 hover:bg-green-700 text-white"
+                className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white"
                 onClick={() => window.open('https://wa.me/966555020733?text=أرغب%20في%20الحصول%20على%20معلومات%20أكثر%20عن%20الخدمات', '_blank')}
               >
-                <MessageCircle className="w-5 h-5 ml-2" />
+                <MessageCircle className="w-5 h-5 shrink-0" />
                 تواصل عبر واتساب
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-purple-600 text-purple-600 hover:bg-purple-50"
+                className="flex items-center justify-center gap-2 border-purple-600 text-purple-600 hover:bg-purple-50"
                 onClick={() => window.location.href = 'tel:+966555020733'}
               >
-                <Phone className="w-5 h-5 ml-2" />
+                <Phone className="w-5 h-5 shrink-0" />
                 اتصال مباشر
               </Button>
             </div>
